@@ -1,0 +1,16 @@
+{
+  "short_name": "Nexus",
+  "name": "Nexus Routine | Excellence",
+  "icons": [
+    {
+      "src": "1000076001.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#fff1f2",
+  "display": "standalone",
+  "theme_color": "#fb7185"
+}
