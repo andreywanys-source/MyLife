@@ -368,12 +368,17 @@
             document.getElementById('hint-sleep').innerText = "Tente dormir 8 horas para equilibrar os hormônios."; 
         }
 
-        window.onload = () => {
+                window.onload = () => {
             document.getElementById('user-age').value = state.age;
             document.getElementById('diary-area').value = state.diaryEntry;
             document.getElementById('streak-count').innerText = state.streak;
             applyTheme(); renderTasks(); renderHabits(); renderIdeas(); updateLevel(); renderHealth();
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('./sw.js');
+            }
         };
     </script>
 </body>
 </html>
+
